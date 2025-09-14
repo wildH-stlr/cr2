@@ -111,3 +111,32 @@ git checkout feature/login
 rebase --onto main c4ac38112
 git rebase --continue     
 git checkout main   
+git commit -m "fix: urgent patch"
+git checkout feature/promo 
+git cherry-pick f600 
+git cherry-pick --continue
+git checkout main   
+git revert f600   
+git log --oneline --graph --decorate --all
+* a8f7153 (HEAD -> main) Revert "fix: urgent patch"
+* f600c4f fix: urgent patch
+* 44f19fe (feature/login) f2: login validation
+*   cd3721a merge: accept menu greeting
+|\  
+| * 229e497 (tag: m1, feature/menu) m1: menu greeting
+* |   a8a35eb Save local changes before merge
+|\ \  
+| * | c8b835c (feat/header) h1: add header
+| |/  
+* | c98a639 Save local changes before merge
+| | * d7053e6 (feature/promo) fix: urgent patch
+| | * 1e9af35 (tag: p1) p1: add promo banner
+| |/  
+| | * 8eafd5e (tag: f2) f2: login validation
+| | * 1b91ebb f1: add login block
+| |/  
+|/|   
+* | c4ac381 (tag: c2) c2: tweak greeting on main
+|/  
+* fc16e96 (tag: c1) c1:initial app
+
