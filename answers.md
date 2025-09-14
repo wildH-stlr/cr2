@@ -94,20 +94,4 @@ git commit -m "merge: accept menu greeting"
 cat app.txt            
 Hello from main
 menu greeting accepted
-git checkout feature/promo   
-git cherry-pick f2~1..f2  
-git status   
-nano app.txt
-nano answers.md
-git add answers.md
-git add app.txt 
-git cherry-pick -x f2~1..f2
-it cherry-pick --continue 
-it log --oneline --decorate --graph feature/promo
-git checkout feature/promo
-git rebase -i HEAD~3
-rebase --continue
-git checkout feature/login
-rebase --onto main c4ac38112
-git rebase --continue     
-git checkout main   
+
