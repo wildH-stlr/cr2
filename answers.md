@@ -88,5 +88,10 @@ fc16e96 (tag: c1) HEAD@{18}: checkout: moving from main to feature/menu
 c4ac381 (tag: c2) HEAD@{19}: commit: c2: tweak greeting on main
 fc16e96 (tag: c1) HEAD@{20}: commit (amend): c1:initial app
 a109178 HEAD@{21}: commit (initial): c1:initial app
-
+git merge feature/menu
+git status
+git commit -m "merge: accept menu greeting" 
+cat app.txt            
+Hello from main
+menu greeting accepted
 
