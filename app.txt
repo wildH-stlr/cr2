@@ -1,4 +1,8 @@
+
+Hello
+promo banner
 Hello from main
 menu greeting accepted
 login from
 client-side validation
+
